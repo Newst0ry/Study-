@@ -1,2 +1,2 @@
 # Study-
-first day - usr <form> code
+first day - use form code
