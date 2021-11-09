@@ -12,7 +12,7 @@
     <input type="radio" name="lecture" value="html" checked> HTML <br>
     <input type="checkbox" name="lecture" value="css"> CSS <br>
     <input type="radio" name="lecture" value="java"> JAVA <br>
-    <input type="checkbox" name="lecture" value="cpp"> C++ <br>
+    <input type="checkbox" name="lecture" value="cpp" disabled="disabled"> C++ <br>
 </form>
 
 <form>
@@ -55,3 +55,138 @@
         <option value="chemical"> 화학공학
         </select>
 </form>
+
+<h2 style="color:green;text-decoration:underline">
+    인라인 스타일을 이용하여 스타일을 적용하였습니다.
+</h2>
+
+<style>
+    table, th, td { border: 2px solid orange; }
+</style>
+
+<table>
+    <tr>
+        <th>참치</th>
+        <th>고래</th>		
+        <th>날치</th>
+    </tr>
+    <tr>
+        <td>상어</td>
+        <td>문어</td>		
+        <td>꽁치</td>
+    </tr>
+    <tr>
+        <td>오징어</td>
+        <td>고등어</td>		
+        <td>돌고래</td>
+    </tr>
+</table>
+
+
+
+
+<style>
+    ul {
+        background-color: #FFDAB9;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li { float: left; }
+    li a {
+        display: block;
+        background-color: #FFDAB9;
+        color: #000000;
+        padding: 8px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    li a:hover {
+        background-color: #CD853F;
+        color: white;
+    }
+
+    .dropdown-button {
+			background-color: #FFDAB9;
+			padding: 8px;
+			font-size: 15px;
+			border: none;
+		}
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #FFDAB9;
+			min-width: 75px;
+			padding: 5px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+		.dropdown-content a {
+			color: black;
+			padding: 8px;
+			text-decoration: none;
+			display: block;
+		}
+		.dropdown-content a:hover { background-color: #CD853F; }
+		.dropdown:hover .dropdown-content { display: block; }
+		.dropdown:hover .dropdown-button { background-color: #CD853F; }
+	</style>
+
+
+<body>
+
+	<h1>드롭다운 메뉴</h1>
+	<div class="dropdown">
+		<button class="dropdown-button">Dropdown</button>
+		<div class="dropdown-content">
+			<a href="#">HTML</a>
+			<a href="#">CSS</a>
+			<a href="#">JAVA</a>
+			<a href="#">C++</a>
+		</div>
+        
+	</div>
+
+
+<h1>수평 내비게이션 바</h1>
+<ul>
+    <li><a href="/index.php">Home</a></li>
+    <li><a href="/html/intro">HTML</a></li>
+    <li><a href="/css/intro">CSS</a></li>
+    <li><a href="/bbs/login.php">로그인</a></li>
+    <li><a href="/bbs/register_form.php">회원가입</a></li>
+</ul>
+
+</body>
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript DataType</title>
+</head>
+
+<body>
+
+	<script>
+    var x = 10, y = 20;
+    if (x == y) {
+        document.write("x와 y는 같습니다.");
+    } else {
+        if (x<y)
+        document.write("x가 y보다 작습니다.");
+        else 
+        document.write("x가 y보다 큽니다.");
+    }
+</script>
+	
+</body>
+
+</html>
